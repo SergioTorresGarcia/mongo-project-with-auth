@@ -1,8 +1,9 @@
 //importamos dependencias de librerias
-import express from "express";
+import express, { Router } from "express";
 import 'dotenv/config';
 import { dbConnection } from "./database/db.js";
-
+import authRoutes from "./routes/auth.routes.js";
+import router from "./routes/router.js";
 
 const app = express()
 
@@ -10,6 +11,17 @@ const app = express()
 app.use(express.json())
 
 const PORT = process.env.PORT || 4001;
+
+// API ROUTES
+app.get('/api/healthy', (req, res) => {
+    res.status(200).json({
+        syccess: true,
+        message: "server is healthy"
+    })
+})
+
+app.use('/api', router)
+
 
 dbConnection()
     .then(() => {
