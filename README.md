@@ -6,7 +6,7 @@ $ npm init -y
 ```
 
 ```bash
-npm i express
+$ npm i express
 ```
 
 Creamos .gitignore y añadimos:
@@ -14,11 +14,11 @@ Creamos .gitignore y añadimos:
 	.env
 
 ```bash
-npm i nodemon -D
+$ npm i nodemon -D
 ```
 
 ```bash
-npm i dotenv -E
+$ npm i dotenv -E
 ```
 
 creamos carpeta src:
@@ -42,3 +42,14 @@ Cambiamos el require por:
 import express from "express";
 import 'dotenv/config';
 ```
+
+ejecutar en powershell:
+```bash
+$ docker run -d -p 27017:27017 --name mongo -v mongo-data:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo:latest
+```
+
+instalamos mongoose:
+```bash
+$ npm i mongoose --save
+```
+
