@@ -22,7 +22,7 @@ app.get('/api/healthy', (req, res) => {
 app.use('/api', router)
 
 
-dbConnection()
+dbConnection() // o por ejemplo appDataSource (como en typeorm)
     .then(() => {
         console.log("Database connected");
 

@@ -53,3 +53,20 @@ instalamos mongoose:
 $ npm i mongoose --save
 ```
 
+instalamos bcrypt:
+```bash
+$ npm i bcrypt --save
+```
+
+```txt
+creamos modelo
+```
+
+```txt
+creamos controlador
+```
+
+```txt
+creamos la ruta
+```
+
