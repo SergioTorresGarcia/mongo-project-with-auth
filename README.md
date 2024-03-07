@@ -55,7 +55,11 @@ $ npm i mongoose --save
 
 instalamos bcrypt:
 ```bash
-$ npm i bcrypt --save
+$ npm i bcrypt
+```
+instalamos jwt:
+```bash
+$ npm i jsonwebtoken
 ```
 
 ```txt
